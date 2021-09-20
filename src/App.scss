@@ -1,0 +1,66 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1.75rem 0.75rem;
+  cursor: pointer;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #1d1d1d;
+    padding: 2rem;
+    width: 50rem;
+    font-size: 1.6rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-control {
+      margin: 1.5rem 0;
+
+      input {
+        padding: 1rem 1.25rem;
+        width: 100%;
+      }
+    }
+
+    .success,
+    .error {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .success {
+      color: rgb(70, 192, 70);
+    }
+
+    .error {
+      color: rgb(245, 48, 48);
+    }
+  }
+}
